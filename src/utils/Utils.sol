@@ -24,7 +24,6 @@ contract Utils is Test {
 
     function codeHash() public returns (bytes32) {
         bytes memory bytecode = getCreationCode();
-        console.logBytes(bytecode);
         return keccak256(bytecode);
     }
 
